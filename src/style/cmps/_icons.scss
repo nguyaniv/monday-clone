@@ -1,0 +1,41 @@
+.icon-colors {
+  position: relative;
+  width: 0.8rem;
+  height: 2rem;
+  background-color: rgb(255, 187, 0);
+  display: inline-block;
+  border-radius: 10px;
+  transform: rotate(35deg);
+  margin: 0 1rem;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 0.8rem;
+    height: 2rem;
+    border-radius: 10px;
+    background-color: rgb(255, 81, 0);
+    left: -1rem;
+    bottom: -0.5rem;
+    z-index: 2;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 10px;
+    background-color: rgb(97, 163, 10);
+    right: -1rem;
+    bottom: 0.5rem;
+    z-index: 2;
+  }
+}
+
+.arrow {
+  transition: all 0.2s ease !important;
+  &-rotate {
+    transition: all 0.2s ease !important;
+    transform: rotate(180deg);
+  }
+}

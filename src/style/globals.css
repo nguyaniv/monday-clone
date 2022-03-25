@@ -1,0 +1,444 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+*:focus {
+  outline: none;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+@media only screen and (max-width: 56.25em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  html {
+    font-size: 45%;
+  }
+}
+
+body {
+  font-family: sans-serif;
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.wrapper-content {
+  margin-top: 7.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.blur {
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+}
+
+.navbar .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  list-style: none;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  font-size: 1.5rem;
+}
+
+.navbar .container::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 8px;
+  -webkit-box-shadow: 0px 4px 4px rgba(29, 139, 242, 0.103);
+          box-shadow: 0px 4px 4px rgba(29, 139, 242, 0.103);
+  z-index: 2;
+}
+
+.navbar__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 7.2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar__left > * {
+  margin: 0 1.5rem;
+  cursor: pointer;
+}
+
+.navbar__left > *:hover {
+  color: #5034ff;
+}
+
+.navbar__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 7.2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar__right > * {
+  margin: 0 1.5rem;
+  cursor: pointer;
+}
+
+.navbar__right > *:hover {
+  color: #5034ff;
+}
+
+.navbar__logo {
+  font-size: 3.5rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 900;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar__logo:hover {
+  color: #000;
+}
+
+.navbar__logo span {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.navbar__btn {
+  padding: 1rem 1.5rem;
+  background-color: #6c6cff;
+  color: white;
+  border: none;
+  border-radius: 1rem;
+}
+
+.navbar__btn .right-arrow {
+  -webkit-transition: -webkit-transform 0.2s ease;
+  transition: -webkit-transform 0.2s ease;
+  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, -webkit-transform 0.2s ease;
+  -webkit-transform: translateY(0.3rem);
+          transform: translateY(0.3rem);
+}
+
+.navbar__btn .right-arrow svg {
+  margin-top: 1rem;
+}
+
+.navbar__btn:hover {
+  color: #fff;
+}
+
+.navbar__btn:hover .right-arrow {
+  -webkit-transform: translate(0.5rem, 0.3rem);
+          transform: translate(0.5rem, 0.3rem);
+  color: #fff;
+}
+
+.header {
+  height: 140rem;
+  width: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  z-index: 10;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 99%, 0 81%);
+          clip-path: polygon(0 0, 100% 0, 100% 99%, 0 81%);
+}
+
+.header__img {
+  position: absolute;
+  bottom: 0;
+  z-index: 4;
+  width: 2080px;
+  height: 708px;
+}
+
+.header__intro {
+  margin-top: 10rem;
+  color: #fff;
+  width: 100%;
+  height: 55rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.header__intro h1 {
+  font-size: 7rem;
+  text-align: center;
+  max-width: 80rem;
+  position: relative;
+  z-index: 2;
+}
+
+.header__intro p {
+  font-size: 2.5rem;
+  z-index: 2;
+}
+
+.header__actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  z-index: 2;
+  height: 25rem;
+}
+
+.header__actions--selects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header__actions--selects > * {
+  width: 12rem;
+  height: 12rem;
+  border: 1px solid gray;
+  border-radius: 5%;
+  margin: 0 1rem;
+  cursor: pointer;
+  position: relative;
+  z-index: 3;
+}
+
+.header__actions--selects > * img {
+  position: absolute;
+  height: 4rem;
+  top: 3.2rem;
+  width: 4rem;
+}
+
+.header__actions--selects > * .icon-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  height: 100%;
+}
+
+.header__actions--selects > * .icon-text p {
+  font-size: 1.7rem;
+  width: 80%;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #dad5d5;
+  opacity: 0.9;
+}
+
+.header__actions--selects > * input[type="checkbox"] {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  width: 1.8rem;
+  height: 1.8rem;
+  cursor: pointer;
+  opacity: 0.2;
+}
+
+.header__actions--selects > * input[type="checkbox"]:checked {
+  opacity: 1;
+}
+
+.header__actions--btn {
+  text-align: center;
+  height: 6.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header__actions--btn p {
+  font-size: 1.5rem;
+}
+
+.header__actions--btn button {
+  cursor: pointer;
+}
+
+.icon-colors {
+  position: relative;
+  width: 0.8rem;
+  height: 2rem;
+  background-color: #ffbb00;
+  display: inline-block;
+  border-radius: 10px;
+  -webkit-transform: rotate(35deg);
+          transform: rotate(35deg);
+  margin: 0 1rem;
+}
+
+.icon-colors::before {
+  content: "";
+  position: absolute;
+  width: 0.8rem;
+  height: 2rem;
+  border-radius: 10px;
+  background-color: #ff5100;
+  left: -1rem;
+  bottom: -0.5rem;
+  z-index: 2;
+}
+
+.icon-colors::after {
+  content: "";
+  position: absolute;
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 10px;
+  background-color: #61a30a;
+  right: -1rem;
+  bottom: 0.5rem;
+  z-index: 2;
+}
+
+.arrow {
+  -webkit-transition: all 0.2s ease !important;
+  transition: all 0.2s ease !important;
+}
+
+.arrow-rotate {
+  -webkit-transition: all 0.2s ease !important;
+  transition: all 0.2s ease !important;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.star {
+  background: #000 url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center;
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.twinkling {
+  background: transparent url(http://www.script-tutorials.com/demos/360/images/twinkling.png) repeat top center;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  -webkit-animation: move-twink-back 200s linear infinite;
+  animation: move-twink-back 200s linear infinite;
+}
+
+.sky {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background-color: #1922a0c5;
+  opacity: 0.6;
+  width: 100%;
+  height: 100%;
+}
+
+@-webkit-keyframes move-twink-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -10000px 5000px;
+  }
+}
+
+@keyframes move-twink-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -10000px 5000px;
+  }
+}
+/*# sourceMappingURL=globals.css.map */
